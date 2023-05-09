@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kapon</title>
-  <style>
-    /* CSS para a página */
-    body {
-      background-color: #fff;
-      font-family: sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      font-size: 2em;
-      margin: 0.5em 0;
-    }
-    .mapa {
-      height: 500px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapon</title>
+    <style>
+        /* Estilos CSS para o layout do site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #c00;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .button {
+            display: inline-block;
+            background-color: #c00;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #900;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <!-- Cabeçalho do site -->
-  <header>
-    <img src="logo.png" alt="Logo do Kapon" width="128" height="128">
-    <h1>Kapon</h1>
-  </header>
-  
-  <!-- Mapa de produtos -->
-  <div class="mapa">
-    <!-- Aqui vai o mapa -->
-  </div>
-  
-  <!-- Script para carregar o mapa do Google Maps -->
-  <script src=""></script>
-  <script>
-    function initMap() {
-              var location = {lat: -23.5505, lng: -46.6333};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: location
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map,
-          title: 'São Paulo'
-        });
-      }
-    }
-  </script>
-  
-  <!-- Rodapé do site -->
-  <footer>
-    <p>Kapon &copy; 2023. Todos os direitos reservados.</p>
-  </footer>
+    <header>
+        <img src="/logo.png" alt="Kapon">
+        <h1>Kapon</h1>
+       
+    </header>
+    <main>
+        <p>O Kapon é um aplicativo que ajuda você a encontrar os produtos que você precisa perto de você. Com o Kapon, você pode facilmente ver onde estão os produtos que você está procurando no mapa.</p>
+        <p>O Kapon também permite que os vendedores anunciem seus produtos e mostrem sua localização no mapa. Você pode entrar em contato com os vendedores através do próprio aplicativo e comprar seus produtos.</p>
+        <a href="#" class="button">Baixe agora</a>
+    </main>
 </body>
 </html>
