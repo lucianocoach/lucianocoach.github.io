@@ -1,21 +1,60 @@
-<!-- 
-Online HTML, CSS and JavaScript editor to run code online.
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kapon</title>
+  <style>
+    /* CSS para a página */
+    body {
+      background-color: #fff;
+      font-family: sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+    .mapa {
+      height: 500px;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>
-    Estamos construindo nosso site
-  </h1>
-
+  <!-- Cabeçalho do site -->
+  <header>
+    <img src="logo.png" alt="Logo do Kapon" width="128" height="128">
+    <h1>Kapon</h1>
+  </header>
+  
+  <!-- Mapa de produtos -->
+  <div class="mapa">
+    <!-- Aqui vai o mapa -->
+  </div>
+  
+  <!-- Script para carregar o mapa do Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLCzVFRB8zyUfSad9cAI5YPsGVICY5Bz4"></script>
+  <script>
+    function initMap() {
+              var location = {lat: -23.5505, lng: -46.6333};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: 'São Paulo'
+        });
+      }
+    }
+  </script>
+  
+  <!-- Rodapé do site -->
+  <footer>
+    <p>Kapon &copy; 2023. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
