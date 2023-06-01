@@ -1,0 +1,143 @@
+html { 
+  background: url("../components/images/fundog.gif") center center fixed; 
+
+}
+
+body{    
+    color: red;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+	
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+
+#title{
+	
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: red;
+	
+}
+
+a:hover{
+    color: black;
+    transition: 0.3s all;
+}
+ul{
+margin-right: 100px;	
+	
+}
+#baixe-btn{
+	background-color:white;
+    border: 2px solid rgb(255,0,0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#baixe-btn:hover{
+    background-color: rgb(255,127,80);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+	
+}
+aside{
+	background: radial-gradient(white, white, white 50%);
+    
+    display: inline-block;
+    margin: 1em 1em 1em 1em;
+    
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: brown;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+.logo img{
+	margin-left: 100px;
+	max-width: 100px;
+	object-position: 0;
+	
+}
+
+.app img{
+	margin-right: 100px;
+	max-width: 120px;
+	object-position: 0;
+	
+}
+.app2 img{
+	margin-left: 100px;
+	max-width: 120px;
+	object-position: 0;
+	
+}
+#sobre{
+	background-color: rgb(132, 214, 201);	
+    
+	color: blue;
+    
+}
